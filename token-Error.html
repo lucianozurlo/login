@@ -46,16 +46,16 @@
 							<h4 class="mb-4">Autenticación de dos factores</h4>
 							<h5>Usuario: <span>u123456</span></h4>
 								<p>Ingresá el token de seguridad:</p>
-								<form action="#" method="post" class="teco_style">
-									<div class="flex justify-center " id="tokenInput"></div>
+								<form class="teco_style" method="post">
 									<div class="form-group">
-										<input hidden id="token" name="token" type="password" value=""
-											class="form-control">
+										<label for="token">Token (ej: 12345678)</label>
+										<input type="password" name="token" id="token" class="form-control"
+											maxlength="8">
 									</div>
-									<button type="submit" id="tokenSubmit"
-										class="btn_submit full-width rounded pulse_bt">Validar token</button>
+									<button type="submit" id="tokenSubmit" class="btn_submit rounded pulse_bt">Validar
+										token</button>
 									<div class="alert alert-danger text-center" role="alert">
-										<strong>¡Error! </strong>Token inválido.
+										<strong>¡Error! </strong>Usuario y/o contraseña inválidos.
 									</div>
 								</form>
 						</div>
