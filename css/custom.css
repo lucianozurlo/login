@@ -1,0 +1,206 @@
+header>div {
+    background-color: #3c009f;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.logo {
+    max-height: 22px;
+}
+
+.row-height {
+    min-height: calc(100vh - 50px) !important;
+    height: calc(100vh - 50px) !important;
+    margin-top: 50px;
+}
+
+.fl-form input.fl-input {
+    outline: 0;
+    transition: all .3s ease-in-out;
+    border: 1px solid #c4c4c4 !important;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    background: #fff;
+    background-clip: padding-box;
+    appearance: none;
+    height: 45px;
+}
+
+.fl-form input.fl-input::-webkit-input-placeholder,
+.fl-form select.fl-select::-webkit-input-placeholder,
+.fl-form textarea.fl-textarea::-webkit-input-placeholder {
+    color: #444
+}
+
+.fl-form .fl-has-focus label.fl-label {
+    color: #3c009f
+}
+
+.fl-form .fl-has-focus input.fl-input,
+.fl-form .fl-has-focus select.fl-select,
+.fl-form .fl-has-focus textarea.fl-textarea {
+    border-color: #3c009f !important
+}
+
+.fl-form label.fl-label {
+    font-size: 12px;
+    color: #222
+}
+
+.btn_submit,
+a.btn_submit {
+    text-transform: uppercase;
+    padding: 10px 22px;
+}
+
+.panel.top {
+    min-height: calc(100vh - 50px) !important;
+    height: calc(100vh - 50px) !important;
+    margin-top: 50px;
+}
+
+.alert {
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+
+/* token */
+input {
+    outline: 0;
+    transition: all .3s ease-in-out;
+    border: 1px solid #c4c4c4 !important;
+    line-height: 1.29412;
+    font-weight: 400;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    background: #fff;
+    background-clip: padding-box;
+    appearance: none;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    padding: 0;
+}
+
+.m-2 {
+    margin: 5px !important;
+}
+
+input:nth-child(1) {
+    margin-left: 0 !important;
+}
+
+input:nth-last-child(1) {
+    margin-right: 0 !important;
+}
+
+.contenedor {
+    max-width: 458px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    input {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contenedor {
+        max-width: 418px;
+    }
+}
+
+
+.rounded {
+    border-radius: .5rem !important;
+}
+
+.my-auto {
+    padding-top: 50px;
+}
+
+body#token {
+    background: #0B0026;
+}
+
+
+#token .panel {
+    padding: 35px;
+}
+
+
+.stores a {
+    padding: 0 2px;
+    transition: .2s ease-in-out;
+}
+
+.stores a:hover {
+    opacity: .7;
+}
+
+.stores img {
+    height: 40px;
+}
+
+.panel.token h5 {
+    font-size: 16px;
+    color: #3c009f;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 15px;
+    border: 1px solid rgb(60 0 159 / 50%);
+    border-radius: 0.25rem !important;
+    background: rgb(60 0 159 / 5%);
+}
+
+.panel.token p {
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.panel.ayuda {
+    background: #3c009f
+}
+
+.panel.ayuda h5,
+.panel.ayuda p {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.panel.ayuda .form-group {
+    margin-bottom: 25px;
+}
+
+a.btn_info {
+    border: none;
+    color: #3c009f;
+    background: #fff;
+    outline: 0;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+    font-size: 14px;
+    font-size: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+a.btn_info:hover {
+    opacity: .7;
+}

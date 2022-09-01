@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Iniciar sesión</title>
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="img/favicon/manifest.json">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png">
+	<link rel="stylesheet" href="fonts/fonts.css" type="text/css" />
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body id="token">
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div>
+	<div class="container-fluid">
+		<header class="row">
+			<div class="col-12">
+				<img src=" img/telecomLogo.svg" class="logo" alt="Telecom">
+			</div>
+		</header>
+		<div class="min-vh-100 d-flex flex-column opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.05)">
+			<div class="container my-auto">
+				<div class="row">
+					<div class="col-md-9 col-lg-7 col-xl-5 mx-auto my-4">
+						<div class="panel center text-center rounded mb-3 token">
+							<h4 class="mb-4">Autenticación de dos factores</h4>
+							<h5>Usuario: <span>u123456</span></h4>
+								<p>Ingresá el token de seguridad:</p>
+								<form action="#" method="post" class="teco_style">
+									<div class="flex justify-center " id="tokenInput"></div>
+									<div class="form-group">
+										<input hidden id="token" name="token" type="password" value=""
+											class="form-control">
+									</div>
+									<button type="submit" id="tokenSubmit"
+										class="btn_submit full-width rounded pulse_bt">Validar token</button>
+									<div class="alert alert-danger text-center" role="alert">
+										<strong>¡Error! </strong>Token inválido.
+									</div>
+								</form>
+						</div>
+						<div class="panel center text-center rounded ayuda">
+							<h5>¿Cómo consigo mi token?</h5>
+							<p>Desde la app <strong>CyberArk Identity</strong>, instalada en tu teléfono celular.</p>
+							<div class="stores">
+								<a href="https://apps.apple.com/ar/app/cyberark-identity/id499910663"
+									target="_blank"><img src="img/btn-AppStore.svg"></a>
+								<a href="https://play.google.com/store/apps/details?id=com.centrify.mdm.samsung"
+									target="_blank"><img src="img/btn-GooglePlay.svg"></a>
+							</div>
+							<a href="pdf/CyberArk.pdf" class="btn_info rounded pulse_bt" target="_blank">
+								Más información</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/common_scripts.js"></script>
+	<script src="js/common_func.js"></script>
+	<script src="js/token.js"></script>
+
+</body>
+
+</html>
